@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="亮度" id="wCs-Hu-pO3" customClass="AdjustSliderNib">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFt-ih-O43">
+                    <rect key="frame" x="275" y="14" width="37" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ll4-XI-IBm">
+                    <rect key="frame" x="51" y="10" width="218" height="31"/>
+                    <animations/>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eby-CX-FKt">
+                    <rect key="frame" x="8" y="14" width="37" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ll4-XI-IBm" secondAttribute="trailing" constant="53" id="0KJ-nd-cw8"/>
+                <constraint firstAttribute="bottom" secondItem="ll4-XI-IBm" secondAttribute="bottom" constant="10" id="3IV-7Z-qfp"/>
+                <constraint firstItem="ll4-XI-IBm" firstAttribute="leading" secondItem="wCs-Hu-pO3" secondAttribute="leading" constant="53" id="4k5-xf-a8Z"/>
+                <constraint firstItem="Eby-CX-FKt" firstAttribute="top" secondItem="wCs-Hu-pO3" secondAttribute="top" constant="14" id="JE5-bQ-wnt"/>
+                <constraint firstItem="IFt-ih-O43" firstAttribute="leading" secondItem="ll4-XI-IBm" secondAttribute="trailing" constant="8" id="JJ9-IG-xIs"/>
+                <constraint firstAttribute="bottom" secondItem="IFt-ih-O43" secondAttribute="bottom" constant="15" id="LdG-dn-smd"/>
+                <constraint firstItem="ll4-XI-IBm" firstAttribute="leading" secondItem="Eby-CX-FKt" secondAttribute="trailing" constant="8" id="RXN-UH-ddf"/>
+                <constraint firstItem="Eby-CX-FKt" firstAttribute="leading" secondItem="wCs-Hu-pO3" secondAttribute="leading" constant="8" id="VbH-0H-a9I"/>
+                <constraint firstItem="IFt-ih-O43" firstAttribute="top" secondItem="wCs-Hu-pO3" secondAttribute="top" constant="14" id="Vv6-PN-iL4"/>
+                <constraint firstAttribute="trailing" secondItem="IFt-ih-O43" secondAttribute="trailing" constant="8" id="XnI-oX-jVY"/>
+                <constraint firstAttribute="bottom" secondItem="Eby-CX-FKt" secondAttribute="bottom" constant="15" id="cjj-2u-Yiu"/>
+                <constraint firstItem="ll4-XI-IBm" firstAttribute="top" secondItem="wCs-Hu-pO3" secondAttribute="top" constant="10" id="wDN-F3-byM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="maxLabel" destination="IFt-ih-O43" id="AfN-kp-RZl"/>
+                <outlet property="minLabel" destination="Eby-CX-FKt" id="HrZ-Gi-kfc"/>
+                <outlet property="slider" destination="ll4-XI-IBm" id="UGU-ak-lYh"/>
+            </connections>
+            <point key="canvasLocation" x="627" y="50"/>
+        </view>
+    </objects>
+</document>

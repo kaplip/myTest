@@ -1,0 +1,46 @@
+//
+//  PrefixHeader.pch
+//  旅游季
+//
+//  Created by niit on 16/1/7.
+//  Copyright © 2016年 niit. All rights reserved.
+//
+
+
+#import <CoreLocation/CoreLocation.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define UserAccount @"user_account"
+#define UserPassword @"user_password"
+#define UserName @"user_name"
+#define UserLocation @"userLocation"
+#define  UserID @"objectID"
+#define UserHeaderPath @"UserHeaderPath"
+
+#define City_Name @"city_name"
+#define City_ID @"city_id"
+#define CurrentCoordinate_log @"CurrentCoordinate_log"
+#define CurrentCoordinate_lat @"CurrentCoordinate_lat"
+#define AdministrativeArea @"AdministrativeArea"
+#define ListFont [UIFont systemFontOfSize:12]
+#define PositonFont [UIFont systemFontOfSize:12]
+#define DetileFont [UIFont systemFontOfSize:12]
+#define  Cell_W(Margin,col) ([UIScreen mainScreen].bounds.size.width-(Margin*col))/2
+
+
+#define messageImageScale 7/16
+#define CompressionQuality 0.3
+
+#define ImageFileName @"imageFileName"
+
+#define mainColor   [UIColor colorWithRed:11/255.0 green:96/255.0 blue:196/255.0 alpha:1]
+
+#endif /* PrefixHeader_pch */
